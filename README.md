@@ -30,17 +30,22 @@ TRAIN_FLAGS="--lr 5e-5 --batch_size 4 --property_loss_weight 0.3 --multi_modal_w
 To train the multi-modal property-aware diffusion model, run:
 
 ```
-python3 scripts/train.py \
-  
+python3 train.py \
+
+```
+Trained models are saved in the ./checkpoints directory (with periodic validation checkpoints).
+Training logs (including 3D reconstruction samples and property adherence metrics) are stored in ./logs for visualization via TensorBoard.
+
 
 3D Reconstruction & On-Demand Generation
 To generate 3D structures from multi-modal inputs (e.g., a 2D image + property constraints) or sample custom designs, run:
 
 ```
 python3 sample.py \
-  
+
   
 ```
+
 
 
 ####
