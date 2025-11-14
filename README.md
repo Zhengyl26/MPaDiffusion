@@ -31,32 +31,16 @@ To train the multi-modal property-aware diffusion model, run:
 
 ```
 python3 scripts/train.py \
-  --data_dir ./data/multi_modal_training \
-  --property_meta_path ./data/property_metadata.csv \
-  --log_dir ./logs \
-  $TRAIN_FLAGS $MODEL_FLAGS $DIFFUSION_FLAGS
-```
-Trained models are saved in the ./checkpoints directory (with periodic validation checkpoints).
-Training logs (including 3D reconstruction samples and property adherence metrics) are stored in ./logs for visualization via TensorBoard.
-
+  
 
 3D Reconstruction & On-Demand Generation
 To generate 3D structures from multi-modal inputs (e.g., a 2D image + property constraints) or sample custom designs, run:
 
 ```
 python3 sample.py \
-  --data_dir ./data/multi_modal_testing \
-  --model_path ./checkpoints/epoch_500000.pt \
-  --output_dir ./generated_3d \
-  --num_samples 10 \
-  --property_constraints '{"density": 0.8, "symmetry": "axial"}' \
-  --use_ddim True \
-  $MODEL_FLAGS $DIFFUSION_FLAGS
+  
   
 ```
-Generated 3D models are saved in .ply format in ./generated_3d, along with property validation reports.
-Use --interactive_design True to enable real-time adjustment of property parameters during sampling (requires a GUI environment).
-
 
 
 ####
