@@ -7,8 +7,6 @@ The implementation encapsulates the key innovations of the proposed framework:
 
 Multi-modal Data Integration: Seamlessly processes heterogeneous input modalities (e.g., 2D images, point clouds, and physical property measurements) through a cross-modal attention mechanism, enabling the model to leverage complementary information for robust 3D representation learning.
 
-Property-Aware Diffusion Mechanism: Embeds domain-specific property constraints (e.g., material density, geometric symmetry, and structural stability) into the diffusion process via a property encoder, ensuring generated 3D structures adhere to desired physical or functional attributes.
-
 On-Demand Design Flexibility: Supports conditional generation of 3D models based on user-defined property parameters (e.g., adjusting porosity for porous materials or specifying load-bearing capacities for mechanical parts), bridging the gap between generic 3D reconstruction and task-specific design requirements.
 
 Efficient 3D Structure Modeling: Adopts a hybrid UNet architecture with 3D-aware residual blocks and adaptive resolution scaling, balancing reconstruction accuracy and computational efficiency for large-scale 3D volumes.
