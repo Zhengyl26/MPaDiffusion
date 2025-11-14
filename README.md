@@ -37,8 +37,7 @@ python3 scripts/train.py \
 To generate 3D structures from multi-modal inputs (e.g., a 2D image + property constraints) or sample custom designs, run:
 
 ```
-  
-  python3 sample.py \
+python3 sample.py \
   
   
 ```
