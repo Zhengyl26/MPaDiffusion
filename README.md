@@ -30,7 +30,7 @@ TRAIN_FLAGS="--lr 5e-5 --batch_size 4 --property_loss_weight 0.3 --multi_modal_w
 To train the multi-modal property-aware diffusion model, run:
 
 ```
-python3 scripts/3d_property_diffusion_train.py \
+python3 scripts/train.py \
   --data_dir ./data/multi_modal_training \
   --property_meta_path ./data/property_metadata.csv \
   --log_dir ./logs \
@@ -44,7 +44,7 @@ Training logs (including 3D reconstruction samples and property adherence metric
 To generate 3D structures from multi-modal inputs (e.g., a 2D image + property constraints) or sample custom designs, run:
 
 ```
-python3 3d_property_diffusion_sample.py \
+python3 sample.py \
   --data_dir ./data/multi_modal_testing \
   --model_path ./checkpoints/epoch_500000.pt \
   --output_dir ./generated_3d \
