@@ -1,4 +1,4 @@
-
+Note:This version of the code is for reference only; our complete code is being updated and will be provided subsequently, coming soon.
 
 This repository presents the PyTorch implementation of the research work outlined in the paper [A unified framework of multi-modal property-aware diffusion model for 3D reconstruction and on-demand design]. Unlike conventional diffusion-based approaches that focus solely on image-level tasks, this project introduces a novel unified framework that integrates multi-modal data fusion, property-aware guidance, and flexible 3D structure generation, enabling end-to-end 3D reconstruction and customizable design based on user-specified properties. 
 
